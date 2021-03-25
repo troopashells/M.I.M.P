@@ -1,6 +1,8 @@
-Mugen on Pi 4 . Aka M.I.M.P.
+M.I.M.P.
 
 This is a project to get Mugen 1.0 running on Pi 4.
+
+*WILL BE UPDATING THIS GITHUB APRIL-JUNE 2021*
 
 Currently,11/20, best way to achieve this is through Box86.
 
