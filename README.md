@@ -1,4 +1,4 @@
-Mugen running on Pi 4 . Aka M.I.M.P.
+Mugen on Pi 4 . Aka M.I.M.P.
 
 This is a project to get Mugen 1.0 running on Pi 4.
 
@@ -45,8 +45,8 @@ Optimising
 - If you autostart qjoypad on boot with controller configured. No keyboard or mouse is required.
 - Kill all background processes you can before starting.
 
-Wanna and to your pi 4 OS? 
-- Check resources below Box86 github has source code .
+Wanna add Mugen to your pi 4 OS? Sorry cant help much YET. 
+- Check resources below Box86 github has source code . Has to be ran through box86.
 - Over time will have M.I.M.P as a package, hopefully,with needed dependencies.
 
 
@@ -55,12 +55,12 @@ What to expect from M.I.M.P
 - We will be making a prebuilt Mugen, M.I.M.P, with chars and screenpacks.
 - M.I.M.P prebuilt will be optimized to run on pi 4.
 - M.I.M.P will be loaded on Lutris.net for easy install.
-- Launching directly from retropie / frontends, through launch script.
+- Launching directly from retropie and other frontends, through launch script.
 
 Updates 
-- Will update doc within the week with better performance .
 - Updates will come as necessary. Still early in box86's "life".
 - Will update when Vulkan drivers are better implemented on pi 4.
+*Testing Vulkan Update soon. 3/24/21*
 
 
 Resources
