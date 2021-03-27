@@ -1,6 +1,6 @@
 M.I.M.P.
 
-This is a project to get Mugen 1.0 running on Pi 4.
+This is a project to get Mugen running on Pi 4.
 
 *WILL BE UPDATING THIS GITHUB APRIL-JUNE 2021*
 
