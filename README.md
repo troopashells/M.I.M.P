@@ -4,8 +4,6 @@ This is a project to get Mugen 1.0 running on Pi 4.
 
 *WILL BE UPDATING THIS GITHUB APRIL-JUNE 2021*
 
-Currently,11/20, best way to achieve this is through Box86.
-
 Box86 works with wine, in this document also works with Lutris.
 
 Currently have have Mugen running at 45-50 fps. 
@@ -26,13 +24,13 @@ How To Run Mugen
 - Put sd in pi power on. 
 - Customize twister OS look. Gui will guide you.
 - After Twister setup. Connect to internet. 
-- Download Mugen 1.0. 
-- Move Mugen folder somewhere to find. Ex /home/pi/mugens
+- Download Mugen 1.1.
+- Move Mugen folder somewhere easy to find. Ex /home/pi/Games
 - Open Lutris on twister desktop.
-- Click "add game " navigate to your mugen .
-- Match mugen resolution with resolution in Lutris. 
+- Click "add game ".
+- Follow Lutris gui to install. 
 - Click Launch
-- Map controls to keyboard. If you want.
+- Map controls to joystick. If you want.
 - FIGHT !
 
 Mugen should open and play fine. 
@@ -43,7 +41,7 @@ Lutris Settings
 - More coming soon.
 
 Optimising 
-- To map controller like keyboard and mouse use qjoypad.
+- To map controller like keyboard and mouse use qjoypad.(CURRENTLY NOT WORKING ON TWISTER)
 - If you autostart qjoypad on boot with controller configured. No keyboard or mouse is required.
 - Kill all background processes you can before starting.
 
