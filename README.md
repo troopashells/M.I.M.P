@@ -108,9 +108,11 @@ Height = 720
 
 
 Which Mugens work? 
+
 Mugen 1.0 works best some 1.0 work.
 
 Why/whats debug key ?
+
 -debug key is control+d. Allows you to see fps and info in bottom leftof screen .
 
 Will this script work for other windows games ?
