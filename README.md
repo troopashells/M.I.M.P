@@ -24,18 +24,23 @@ You will need
 
 
 1.Download os of choice.
+
 2.update with
 sudo apt-get update
+
 3.Install Georges retropi setup extras
 git clone --branch emulator https://github.com/GeorgeMcMullen/rp-box86wine /home/pi/RetroPie-Setup/ext/rp-box86wineemu/
+
 4.Update RetroPie-Setup and install scripts 
 Run retropie-setup update. 
 After update you should see a new subsection in "dependencies" and "experimental" with the scripts in them. They must be run in order and will produce an error if you try to install them out of order. Launch RetroPie Setup, go to "Manage Packages" (P) and then run the scripts as follows:
 dependencies/mesa
 experimental/box86
 experimental/wine
+
 5.Move game fies to /home/RetroPie/roms/mugens/games
 This can be done many ways .SSH, midnight commander to name a few.
+
 6.Two options for making game script (I used .conf)
 Option 1.
 Create a file /home/pi/RetroPie/roms/mugens/yourgame.conf containing the following:
@@ -51,6 +56,7 @@ matchbox-window-manager &
 WINEDEBUG=-all LD_LIBRARY_PATH="/opt/retropie/supplementary/mesa/lib/" setarch linux32 -L /opt/retropie/emulators/wine/bin/wine '/home/pi/RetroPie/roms/mugens/games/yourgamefolder/gamelaunch.EXE'
 
 After you've created either of these files, you'll have to restart Emulation Station in order for them to be picked up.
+
 7.Launch game as normal retropie game.
 
 8.Mugen Config
