@@ -6,8 +6,11 @@ July 6,2021 UPDATE.
 Mugen launching great from Retropie 
 
 Have tested and been successful on following builds .
+
 -Virtualman Pi 4 build 
+
 -Back to future build by Micheal Miller 
+
 -Regular Retropie 
 
 Currently have have Mugen running at 45-50 fps. 
@@ -125,9 +128,6 @@ What to expect from M.I.M.P
 
 Resources
 - Box86 Github - https://github.com/ptitSeb/box86
-- Twister OS Website - https://twisteros.com
-- Lutris Website - https://lutris.net 
-- Lutris Github - https://github.com/lutris
 - Retropie Github - https://github.com/retropie
 - Mugen - can be found many places. Orginal website is down .
 - George in Retropie forum box86 topic. https://github.com/GeorgeMcMullen/rp-box86wine
