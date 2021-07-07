@@ -45,14 +45,20 @@ This can be done many ways .SSH, midnight commander to name a few.
 Option 1.
 Create a file /home/pi/RetroPie/roms/mugens/yourgame.conf containing the following:
 DIRECTORY=/home/pi/RetroPie/roms/mugens/games/yourgame/
+
 PROGRAM=/home/pi/RetroPie/roms/mugens/games/yourgame/gamelaunch.EXE
+
 OPTIONS=
+
 Option 2.
 Use the shell script method. Create a file called: /home/pi/RetroPie/roms/wine/yourgame.sh containing the following:
 #!/bin/bash
+
 xset -dpms s off s noblank
+
 cd "/home/pi/RetroPie/roms/mugens/games/yourgamefolder/"
 matchbox-window-manager &
+
 WINEDEBUG=-all LD_LIBRARY_PATH="/opt/retropie/supplementary/mesa/lib/" setarch linux32 -L /opt/retropie/emulators/wine/bin/wine '/home/pi/RetroPie/roms/mugens/games/yourgamefolder/gamelaunch.EXE'
 
 After you've created either of these files, you'll have to restart Emulation Station in order for them to be picked up.
@@ -60,14 +66,19 @@ After you've created either of these files, you'll have to restart Emulation Sta
 7.Launch game as normal retropie game.
 
 8.Mugen Config
+
 Go and edit settings as normal to make it full screen and other changes. Tons of info online for it . 
 
 Where/how do I get mugens?
+
 visit 
+
 https://www.andersonkenya1.net/files/category/3-full-mugen-games/
+
 Then make a free account and download mugens. 
 
 Mugen Settings 
+
 Go to desktop find "mugen 001" for example.
 Open mugen 001/data/mugen.cfg 
 Find and change the following if necessary 
