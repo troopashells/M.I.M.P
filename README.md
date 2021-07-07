@@ -2,7 +2,7 @@ M.I.M.P.
 
 This is a project to get Mugen running on Pi 4.
 
-July 6,2021 UPDATE.
+July 6, 2021 UPDATE.
 Mugen launching great from Retropie 
 
 Have tested and been successful on following builds .
@@ -114,7 +114,7 @@ Height = 720
 
 *Which Mugens work? 
 
-Mugen 1.0 works best some 1.0 work.
+Mugen 1.0 works best some 1.1 work.
 
 
 *Why/whats debug key ?
@@ -140,7 +140,7 @@ https://retropie.org.uk/forum/topic/29241/the-which-games-works-with-box86-wine-
 *Resources
 - Box86 Github - https://github.com/ptitSeb/box86
 - Retropie Github - https://github.com/retropie
-- Mugen - can be found many places. Orginal website is down .
+- Mugen - can be found many places. Orginal website is down.
 - George in Retropie forum box86 topic. https://github.com/GeorgeMcMullen/rp-box86wine
 
 
