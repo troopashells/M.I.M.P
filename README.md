@@ -135,7 +135,7 @@ https://retropie.org.uk/forum/topic/29241/the-which-games-works-with-box86-wine-
 - We will be making a prebuilt Mugen, M.I.M.P, with chars and screenpacks.
 - M.I.M.P prebuilt will be optimized to run on pi 4.
 - Controller mapped to keyboard using joy2key. so keyboard isn't necessary, right now escape key is very necessary for mugen . 
-- 
+
 
 *Resources
 - Box86 Github - https://github.com/ptitSeb/box86
