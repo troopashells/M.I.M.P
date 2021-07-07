@@ -73,7 +73,7 @@ After you've created either of these files, you'll have to restart Emulation Sta
 Go and edit settings as normal to make it full screen and other changes. Tons of info online for it . 
 
 
-Where/how do I get mugens?
+*Where/how do I get mugens?
 
 visit 
 
