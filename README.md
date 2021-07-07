@@ -83,7 +83,7 @@ Then make a free account and download mugens.
 
 
 
-Mugen Settings 
+*Mugen Settings 
 
 Go to desktop find "mugen 001" for example.
 
@@ -91,7 +91,7 @@ Open mugen 001/data/mugen.cfg
 
 
 
-Find and change the following if necessary. Will find most in this order.
+*Find and change the following if necessary. Will find most in this order.
 
 -GameSpeed = 60 
 
@@ -112,17 +112,17 @@ Height = 720
 -Blitmode = Normal 
 
 
-Which Mugens work? 
+*Which Mugens work? 
 
 Mugen 1.0 works best some 1.0 work.
 
 
-Why/whats debug key ?
+*Why/whats debug key ?
 
 -debug key is control+d. Allows you to see fps and info in bottom leftof screen .
 
 
-Will this script work for other windows games ?
+*Will this script work for other windows games ?
 
 YES! Heres a working list. Feel free to add too it .
 
@@ -130,14 +130,14 @@ https://retropie.org.uk/forum/topic/29241/the-which-games-works-with-box86-wine-
 
 
 
-What to expect from M.I.M.P
+*What to expect from M.I.M.P
 - M.I.M.P stands for "mimp is mugen pi". So pi mugen stuff.
 - We will be making a prebuilt Mugen, M.I.M.P, with chars and screenpacks.
 - M.I.M.P prebuilt will be optimized to run on pi 4.
 - Controller mapped to keyboard using joy2key. so keyboard isn't necessary, right now escape key is very necessary for mugen . 
 - 
 
-Resources
+*Resources
 - Box86 Github - https://github.com/ptitSeb/box86
 - Retropie Github - https://github.com/retropie
 - Mugen - can be found many places. Orginal website is down .
@@ -145,7 +145,7 @@ Resources
 
 
 
-Props/Credit. Links above in resources. 
+*Props/Credit. Links above in resources. 
 - Box86.       
 - Retropie.   
 - Mugen.    
