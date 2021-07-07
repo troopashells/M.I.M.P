@@ -2,66 +2,90 @@ M.I.M.P.
 
 This is a project to get Mugen running on Pi 4.
 
-*WILL BE UPDATING THIS GITHUB APRIL-JUNE 2021*
+July 6,2021 UPDATE.
+Mugen launching great from Retropie 
 
-Box86 works with wine, in this document also works with Lutris.
+Have tested and been successful on following builds .
+-Virtualman Pi 4 build 
+-Back to future build by Micheal Miller 
+-Regular Retropie 
 
 Currently have have Mugen running at 45-50 fps. 
+Have 28 mugens running great with following how to.
 
-Many characters tested ex, deadpool, captain America a bunch more. 
+How to 
 
 You will need 
 - pi 4.
-- micro sd 32gb recommended.
+- micro sd 
 - keyboard.
 - usb mouse.
 - pc to burn/etch sd card. 
 
-How To Run Mugen 
 
-- Download Twister OS.
-- Burn Twister OS to micro sd with BalenaEtcher.
-- Put sd in pi power on. 
-- Customize twister OS look. Gui will guide you.
-- After Twister setup. Connect to internet. 
-- Download Mugen 1.1.
-- Move Mugen folder somewhere easy to find. Ex /home/pi/Games
-- Open Lutris on twister desktop.
-- Click "add game ".
-- Follow Lutris gui to install. 
-- Click Launch
-- Map controls to joystick. If you want.
-- FIGHT !
+1.Download os of choice.
+2.update with
+sudo apt-get update
+3.Install Georges retropi setup extras
+git clone --branch emulator https://github.com/GeorgeMcMullen/rp-box86wine /home/pi/RetroPie-Setup/ext/rp-box86wineemu/
+4.Update RetroPie-Setup and install scripts 
+Run retropie-setup update. 
+After update you should see a new subsection in "dependencies" and "experimental" with the scripts in them. They must be run in order and will produce an error if you try to install them out of order. Launch RetroPie Setup, go to "Manage Packages" (P) and then run the scripts as follows:
+dependencies/mesa
+experimental/box86
+experimental/wine
+5.Move game fies to /home/RetroPie/roms/mugens/games
+This can be done many ways .SSH, midnight commander to name a few.
+6.Two options for making game script (I used .conf)
+Option 1.
+Create a file /home/pi/RetroPie/roms/mugens/yourgame.conf containing the following:
+DIRECTORY=/home/pi/RetroPie/roms/mugens/games/yourgame/
+PROGRAM=/home/pi/RetroPie/roms/mugens/games/yourgame/gamelaunch.EXE
+OPTIONS=
+Option 2.
+Use the shell script method. Create a file called: /home/pi/RetroPie/roms/wine/yourgame.sh containing the following:
+#!/bin/bash
+xset -dpms s off s noblank
+cd "/home/pi/RetroPie/roms/mugens/games/yourgamefolder/"
+matchbox-window-manager &
+WINEDEBUG=-all LD_LIBRARY_PATH="/opt/retropie/supplementary/mesa/lib/" setarch linux32 -L /opt/retropie/emulators/wine/bin/wine '/home/pi/RetroPie/roms/mugens/games/yourgamefolder/gamelaunch.EXE'
 
-Mugen should open and play fine. 
-For controller config and better play see optimising below.
+After you've created either of these files, you'll have to restart Emulation Station in order for them to be picked up.
+7.Launch game as normal retropie game.
 
-Lutris Settings 
-- Make a "Windowed Desktop" same resolution as your screen.
-- More coming soon.
+8.Mugen Config
+Go and edit settings as normal to make it full screen and other changes. Tons of info online for it . 
 
-Optimising 
-- To map controller like keyboard and mouse use qjoypad.(CURRENTLY NOT WORKING ON TWISTER)
-- If you autostart qjoypad on boot with controller configured. No keyboard or mouse is required.
-- Kill all background processes you can before starting.
+Where/how do I get mugens?
+visit 
+https://www.andersonkenya1.net/files/category/3-full-mugen-games/
+Then make a free account and download mugens. 
 
-Wanna add Mugen to your pi 4 OS? Sorry cant help much YET. 
-- Check resources below Box86 github has source code . Has to be ran through box86.
-- Over time will have M.I.M.P as a package, hopefully,with needed dependencies.
+Mugen Settings 
+Go to desktop find "mugen 001" for example.
+Open mugen 001/data/mugen.cfg 
+Find and change the following if necessary 
+-GameSpeed = 60 
+-Allowdebugmode = 1
+-Allowdebugkeys = 1
+-Video Settings
+Width = 1280
+Height = 720
+-Fullscreen = 1
+-Rendermode = System
+-Blitmode = Normal 
 
+Which Mugens work? 
+Mugen 1.0 works best some 1.0 work.
+
+Will this script work for other windows games ?
+YES! Heres a working list. Feel free to add too it .
+https://retropie.org.uk/forum/topic/29241/the-which-games-works-with-box86-wine-topic-on-the-retropie-rpi4-400/62
 
 What to expect from M.I.M.P
 - M.I.M.P stands for "mimp is mugen pi". So pi mugen stuff.
 - We will be making a prebuilt Mugen, M.I.M.P, with chars and screenpacks.
 - M.I.M.P prebuilt will be optimized to run on pi 4.
-- M.I.M.P will be loaded on Lutris.net for easy install.
-- Launching directly from retropie and other frontends, through launch script.
-
-Updates 
-- Updates will come as necessary. Still early in box86's "life".
-- Will update when Vulkan drivers are better implemented on pi 4.
-*Testing Vulkan Update soon. 3/24/21*
-
 
 Resources
 - Box86 Github - https://github.com/ptitSeb/box86
@@ -70,14 +94,13 @@ Resources
 - Lutris Github - https://github.com/lutris
 - Retropie Github - https://github.com/retropie
 - Mugen - can be found many places. Orginal website is down .
+- George in Retropie forum box86 topic. https://github.com/GeorgeMcMullen/rp-box86wine
 
 
 
 Props/Credit. Links above in resources. 
 - Box86.       
-- Retropie.
-- Twister OS.   
-- Mugen.
-- Lutris.       
+- Retropie.   
+- Mugen.    
 - Pi foundation.
 
