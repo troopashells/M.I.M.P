@@ -31,10 +31,12 @@ You will need
 2.update with
 sudo apt-get update
 
-3.Install Georges retropi setup extras
+3.Change gpu memory to at least 128 i use 256. This is done in raspiconfig under tools i. pixel desktop or config.txt
+
+4.Install Georges retropi setup extras
 " git clone --branch emulator https://github.com/GeorgeMcMullen/rp-box86wine /home/pi/RetroPie-Setup/ext/rp-box86wineemu/ "
 
-4.Update RetroPie-Setup and install scripts 
+5.Update RetroPie-Setup and install scripts 
 Run retropie-setup update. 
 After update you should see a new subsection in "dependencies" and "experimental" with the scripts in them. 
 They must be run in order and will produce an error if you try to install them out of order. 
@@ -47,10 +49,10 @@ experimental/box86
 
 experimental/wine
 
-5.Move game fies to /home/RetroPie/roms/mugens/games
+6.Move game fies to /home/RetroPie/roms/mugens/games
 This can be done many ways .SSH, midnight commander to name a few.
 
-6.Two options for making game script (I used .conf)
+7.Two options for making game script (I used .conf)
 Option 1.
 Create a file /home/pi/RetroPie/roms/mugens/yourgame.conf containing the following:
 DIRECTORY=/home/pi/RetroPie/roms/mugens/games/yourgame/
@@ -72,7 +74,7 @@ WINEDEBUG=-all LD_LIBRARY_PATH="/opt/retropie/supplementary/mesa/lib/" setarch l
 
 After you've created either of these files, you'll have to restart Emulation Station in order for them to be picked up.
 
-7.Launch game as normal retropie game.
+8.Launch game as normal retropie game. ENJOY!
 
 
 
@@ -87,6 +89,7 @@ https://www.andersonkenya1.net/files/category/3-full-mugen-games/
 
 Then make a free account and download mugens. 
 
+WE ARE WORKING ON A SCRIPT TO DOWNLOAD 10-20 MUGENS AND AUTO MAKE SCRIPTS THAT INSTALL WINE, MESA, BOX86, MUGENS, AND LAUNCH FILES .
 
 
 *Mugen Settings 
