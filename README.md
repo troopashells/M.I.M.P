@@ -68,9 +68,9 @@ After you've created either of these files, you'll have to restart Emulation Sta
 
 7.Launch game as normal retropie game.
 
-8.Mugen Config
 
-Go and edit settings as normal to make it full screen and other changes. Tons of info online for it . 
+
+Frequently Asked Questions.
 
 
 *Where/how do I get mugens?
@@ -89,9 +89,7 @@ Go to desktop find "mugen 001" for example.
 
 Open mugen 001/data/mugen.cfg 
 
-
-
-*Find and change the following if necessary. Will find most in this order.
+then find and change the following if necessary. Will find most in this order.
 
 -GameSpeed = 60 
 
