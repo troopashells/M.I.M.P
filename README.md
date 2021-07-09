@@ -32,13 +32,19 @@ You will need
 sudo apt-get update
 
 3.Install Georges retropi setup extras
-git clone --branch emulator https://github.com/GeorgeMcMullen/rp-box86wine /home/pi/RetroPie-Setup/ext/rp-box86wineemu/
+" git clone --branch emulator https://github.com/GeorgeMcMullen/rp-box86wine /home/pi/RetroPie-Setup/ext/rp-box86wineemu/ "
 
 4.Update RetroPie-Setup and install scripts 
 Run retropie-setup update. 
-After update you should see a new subsection in "dependencies" and "experimental" with the scripts in them. They must be run in order and will produce an error if you try to install them out of order. Launch RetroPie Setup, go to "Manage Packages" (P) and then run the scripts as follows:
+After update you should see a new subsection in "dependencies" and "experimental" with the scripts in them. 
+They must be run in order and will produce an error if you try to install them out of order. 
+Launch RetroPie Setup, go to "Manage Packages".
+Then run the scripts as follows:
+
 dependencies/mesa
+
 experimental/box86
+
 experimental/wine
 
 5.Move game fies to /home/RetroPie/roms/mugens/games
