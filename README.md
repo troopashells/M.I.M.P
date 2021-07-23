@@ -3,6 +3,7 @@ M.I.M.P.
 This is a project to get Mugen running on Pi 4.
 
 July 6, 2021 UPDATE.
+
 Mugen launching great from Retropie 
 
 Have tested and been successful on following builds .
@@ -116,8 +117,6 @@ Add mugen as its own system in retropie
 
 1. open pixel desktop .
 2. edit es_systems.cfg 
-sudo cp /etc/emulationstation/es_systems.cfg /home/pi/.emulationstation/es_systems.cfg
-
 sudo nano /home/pi/.emulationstation/es_systems.cfg
 
 Add the following codeblock anywhere after <systemList>
@@ -131,6 +130,14 @@ Add the following codeblock anywhere after <systemList>
 <platform>mugen</platform>
 <theme>mugen</theme>
 </system>
+
+Also if do this remeber to 
+
+If you u move games to mugen/games change your directories in launch scripts .
+example roms/wine/games to roms/mugen/games 
+
+Move your .conf or .sh files to /roms/mugen/games. 
+
 
 
 Frequently Asked Questions.
