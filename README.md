@@ -31,7 +31,8 @@ You will need
 2.update with
 sudo apt-get update
 
-3.Change gpu memory to at least 128 i use 256. This is done in raspiconfig under tools i. pixel desktop or config.txt if you don't have pixel get it now .
+3.Change gpu memory to at least 128 i use 256. This is done in raspiconfig under tools in pixel desktop or config.txt.
+if you don't have pixel get it now .
 
 4.Install Georges retropi setup extras
 
