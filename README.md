@@ -31,17 +31,24 @@ You will need
 2.update with
 sudo apt-get update
 
-3.Change gpu memory to at least 128 i use 256. This is done in raspiconfig under tools in pixel desktop or config.txt.
-if you don't have pixel get it now .
+3.Change gpu memory to at least 128 i use 256. 
+
+This is done in raspiconfig under tools in pixel desktop or config.txt.
+
+If you don't have pixel get it now .
 
 4.Install Georges retropi setup extras
 
 " git clone --branch emulator https://github.com/GeorgeMcMullen/rp-box86wine /home/pi/RetroPie-Setup/ext/rp-box86wineemu/ "
 
 5.Update RetroPie-Setup and install scripts 
+
 Run retropie-setup update. 
+
 After update you should see a new subsection in "dependencies" and "experimental" with the scripts in them. 
+
 They must be run in order and will produce an error if you try to install them out of order. 
+
 Launch RetroPie Setup, go to "Manage Packages".
 Then run the scripts as follows:
 
@@ -51,19 +58,19 @@ experimental/box86
 
 experimental/wine
 
-6.Move game fies to /home/RetroPie/roms/mugens/games
+6.Move game fies to /home/RetroPie/roms/wine/games
 This can be done many ways .SSH, midnight commander to name a few.
 
 7.Two options for making game script (I used .conf)
 
 Option 1.
 
-Create a file /home/pi/RetroPie/roms/mugens/yourgame.conf 
+Create a file /home/pi/RetroPie/roms/wine/yourgame.conf 
 containing the following:
 
-DIRECTORY=/home/pi/RetroPie/roms/mugens/games/yourgame/
+DIRECTORY=/home/pi/RetroPie/roms/wine/games/yourgame/
 
-PROGRAM=/home/pi/RetroPie/roms/mugens/games/yourgame/gamelaunch.EXE
+PROGRAM=/home/pi/RetroPie/roms/wine/games/yourgame/gamelaunch.EXE
 
 OPTIONS=
 
@@ -79,10 +86,10 @@ containing the following:
 
 xset -dpms s off s noblank
 
-cd "/home/pi/RetroPie/roms/mugens/games/yourgamefolder/"
+cd "/home/pi/RetroPie/roms/wine/games/yourgamefolder/"
 matchbox-window-manager &
 
-WINEDEBUG=-all LD_LIBRARY_PATH="/opt/retropie/supplementary/mesa/lib/" setarch linux32 -L /opt/retropie/emulators/wine/bin/wine '/home/pi/RetroPie/roms/mugens/games/yourgamefolder/gamelaunch.EXE'
+WINEDEBUG=-all LD_LIBRARY_PATH="/opt/retropie/supplementary/mesa/lib/" setarch linux32 -L /opt/retropie/emulators/wine/bin/wine '/home/pi/RetroPie/roms/wine/games/yourgamefolder/gamelaunch.EXE'
 
 
 8.Replace wine desktop file with attached "Wine Desktop.sh" in this github . 
@@ -103,6 +110,27 @@ Remeber you have to do this twice for mugen. First in qjoypad then in mugen itse
 
 15. Turn joystick input off .it will be confused if not .
 
+
+
+Add mugen as its own system in retropie
+
+1. open pixel desktop .
+2. edit es_systems.cfg 
+sudo cp /etc/emulationstation/es_systems.cfg /home/pi/.emulationstation/es_systems.cfg
+
+sudo nano /home/pi/.emulationstation/es_systems.cfg
+
+Add the following codeblock anywhere after <systemList>
+
+<system>
+<fullname>M.U.G.E.N</fullname>
+<name>mugen</name>
+<path>~/RetroPie/roms/mugen</path>
+<extension>.sh .SH .conf .CONF </extension>
+<command>bash %ROM%</command> copy this line from wine in es_systems.cfg
+<platform>mugen</platform>
+<theme>mugen</theme>
+</system>
 
 
 Frequently Asked Questions.
