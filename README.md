@@ -72,9 +72,24 @@ matchbox-window-manager &
 
 WINEDEBUG=-all LD_LIBRARY_PATH="/opt/retropie/supplementary/mesa/lib/" setarch linux32 -L /opt/retropie/emulators/wine/bin/wine '/home/pi/RetroPie/roms/mugens/games/yourgamefolder/gamelaunch.EXE'
 
-After you've created either of these files, you'll have to restart Emulation Station in order for them to be picked up.
 
-8.Launch game as normal retropie game. ENJOY!
+8.Replace wine desktop file with attached "Wine Desktop.sh" in this github . 
+
+9. Open desktop install Qjoypad with sudo apt-install qjoypad 
+
+10.Create a controller layout for your game. 
+The Wine Desktop is looking for a a qjoypad layout with same name as the folder name of your game. Example disney controller layout will auto load if folder and layout have same name .  
+
+11, Map controller with qjoypad. Update when done.
+Remeber you have to do this twice for mugen. First in qjoypad then in mugen itself. You can copy your in mugen controls settings by editing data/mugen.cfg.
+
+12. open terminal type  sudo reboot 
+
+13. Find mugen in retropie press play .
+
+14. Map controls to match qjoypad.
+
+15. Turn joystick input off .it will be confused if not .
 
 
 
@@ -140,9 +155,7 @@ https://retropie.org.uk/forum/topic/29241/the-which-games-works-with-box86-wine-
 *What to expect from M.I.M.P
 - M.I.M.P stands for "mimp is mugen pi". So pi mugen stuff.
 - We will be making a prebuilt Mugen, M.I.M.P, with chars and screenpacks.
-- M.I.M.P prebuilt will be optimized to run on pi 4.
-- Controller mapped to keyboard using joy2key. so keyboard isn't necessary, right now escape key is very necessary for mugen . 
-
+- M.I.M.P prebuilt will be optimized to run on pi 4
 
 *Resources
 - Box86 Github - https://github.com/ptitSeb/box86
