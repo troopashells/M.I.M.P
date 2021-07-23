@@ -31,7 +31,7 @@ You will need
 2.update with
 sudo apt-get update
 
-3.Change gpu memory to at least 128 i use 256. This is done in raspiconfig under tools i. pixel desktop or config.txt
+3.Change gpu memory to at least 128 i use 256. This is done in raspiconfig under tools i. pixel desktop or config.txt if you don't have pixel get it now .
 
 4.Install Georges retropi setup extras
 
@@ -54,8 +54,12 @@ experimental/wine
 This can be done many ways .SSH, midnight commander to name a few.
 
 7.Two options for making game script (I used .conf)
+
 Option 1.
-Create a file /home/pi/RetroPie/roms/mugens/yourgame.conf containing the following:
+
+Create a file /home/pi/RetroPie/roms/mugens/yourgame.conf 
+containing the following:
+
 DIRECTORY=/home/pi/RetroPie/roms/mugens/games/yourgame/
 
 PROGRAM=/home/pi/RetroPie/roms/mugens/games/yourgame/gamelaunch.EXE
@@ -63,8 +67,13 @@ PROGRAM=/home/pi/RetroPie/roms/mugens/games/yourgame/gamelaunch.EXE
 OPTIONS=
 
 Option 2.
-Use the shell script method. Create a file called: /home/pi/RetroPie/roms/wine/yourgame.sh 
+
+Use the shell script method. Create a file called:
+
+/home/pi/RetroPie/roms/wine/yourgame.sh 
+
 containing the following:
+
 #!/bin/bash
 
 xset -dpms s off s noblank
@@ -134,6 +143,8 @@ Height = 720
 -Rendermode = System
 
 -Blitmode = Normal 
+
+-Joystick input for both players =0 
 
 
 *Which Mugens work? 
