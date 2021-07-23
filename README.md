@@ -2,9 +2,11 @@ M.I.M.P.
 
 This is a project to get Mugen running on Pi 4.
 
-July 6, 2021 UPDATE.
+July 23, 2021 UPDATE.
 
-Mugen launching great from Retropie 
+Mugen launching great from Retropie. 
+
+Worked out keyboard mapper with qjoypad .
 
 Have tested and been successful on following builds .
 
