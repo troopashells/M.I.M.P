@@ -34,6 +34,7 @@ sudo apt-get update
 3.Change gpu memory to at least 128 i use 256. This is done in raspiconfig under tools i. pixel desktop or config.txt
 
 4.Install Georges retropi setup extras
+
 " git clone --branch emulator https://github.com/GeorgeMcMullen/rp-box86wine /home/pi/RetroPie-Setup/ext/rp-box86wineemu/ "
 
 5.Update RetroPie-Setup and install scripts 
@@ -62,7 +63,8 @@ PROGRAM=/home/pi/RetroPie/roms/mugens/games/yourgame/gamelaunch.EXE
 OPTIONS=
 
 Option 2.
-Use the shell script method. Create a file called: /home/pi/RetroPie/roms/wine/yourgame.sh containing the following:
+Use the shell script method. Create a file called: /home/pi/RetroPie/roms/wine/yourgame.sh 
+containing the following:
 #!/bin/bash
 
 xset -dpms s off s noblank
