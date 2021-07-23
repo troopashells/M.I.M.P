@@ -153,6 +153,12 @@ Then make a free account and download mugens.
 
 WE ARE WORKING ON A SCRIPT TO DOWNLOAD 10-20 MUGENS AND AUTO MAKE SCRIPTS THAT INSTALL WINE, MESA, BOX86, MUGENS, AND LAUNCH FILES .
 
+*What if I have to install a game ?
+Install game in wine desktop launched with "Wine Desktop.sh" under wine in retropie. 
+Then move games folder to /roms/wine/games or desired location . 
+Normally things are installed to c drive of wine under /home/pi/.wine/cdrive/program files/game example . 
+You have to "show hidden files " to see .wine folder .
+
 
 *Mugen Settings 
 
