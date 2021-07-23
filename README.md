@@ -121,6 +121,7 @@ Add mugen as its own system in retropie
 
 1. open pixel desktop .
 2. edit es_systems.cfg 
+
 sudo nano /home/pi/.emulationstation/es_systems.cfg
 
 Add the following codeblock anywhere after <systemList>
@@ -135,7 +136,7 @@ Add the following codeblock anywhere after <systemList>
 <theme>mugen</theme>
 </system>
 
-Also if do this remeber to 
+Also if do this remeber
 
 If you u move games to mugen/games change your directories in launch scripts .
 example roms/wine/games to roms/mugen/games 
