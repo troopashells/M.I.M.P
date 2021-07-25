@@ -102,7 +102,9 @@ WINEDEBUG=-all LD_LIBRARY_PATH="/opt/retropie/supplementary/mesa/lib/" setarch l
 10.Create a controller layout for your game. 
 The Wine Desktop is looking for a a qjoypad layout with same name as the folder name of your game. Example disney controller layout will auto load if folder and layout have same name .  
 
-Also if you are using .sh method just make one layout for all mugens titled "mugen".  If you are installing a different game or want different controls for mugen remove the "qjoypad "mugen" &" line.
+Also if you are using .sh method just make one layout for all mugens titled "mugen". Then add this line to .sh files for mugen right above wine line .
+
+qjoyoad "mugen" &   
 
 11, Map controller with qjoypad. Update when done.
 Remeber you have to do this twice for mugen. First in qjoypad then in mugen itself. You can copy your in mugen controls settings by editing data/mugen.cfg.
