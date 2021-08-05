@@ -89,8 +89,11 @@ containing the following:
 xset -dpms s off s noblank
 
 cd "/home/pi/RetroPie/roms/wine/games/yourgamefolder/"
+
 matchbox-window-manager &
+
 qjoypad "mugen" &
+
 WINEDEBUG=-all LD_LIBRARY_PATH="/opt/retropie/supplementary/mesa/lib/" setarch linux32 -L /opt/retropie/emulators/wine/bin/wine '/home/pi/RetroPie/roms/wine/games/yourgamefolder/gamelaunch.EXE'
 
 
