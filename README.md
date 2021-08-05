@@ -85,7 +85,9 @@ Use the shell script method. Create a file called:
 containing the following:
 
 #!/bin/bash
+
 xset -dpms s off s noblank
+
 cd "/home/pi/RetroPie/roms/wine/games/yourgamefolder/"
 matchbox-window-manager &
 qjoypad "mugen" &
