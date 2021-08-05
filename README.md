@@ -34,7 +34,7 @@ You will need
 2.update with
 sudo apt-get update
 
-3.Change gpu memory to at least 128 i use 256. 
+3.Change gpu memory to at least 128 if necessary
 
 This is done in raspiconfig under tools in pixel desktop or config.txt.
 
@@ -100,6 +100,7 @@ WINEDEBUG=-all LD_LIBRARY_PATH="/opt/retropie/supplementary/mesa/lib/" setarch l
 8.Replace wine desktop file with attached "Wine Desktop.sh" in this github . 
 
 9.Open pixel desktop from retropie menu. Then install Qjoypad with
+
 sudo apt-install qjoypad 
 
 10.Create a controller layout for mugen. 
@@ -137,6 +138,10 @@ Height = 720
 
 14. Map controls to match qjoypad.
 
+15. Thats it. repeat for your Mugens .
+
+A few optional steps/things and FAQ below .
+
 
 Add mugen as its own system in retropie
 
@@ -173,14 +178,6 @@ https://www.andersonkenya1.net/files/category/3-full-mugen-games/
 
 Then make a free account and download mugens. 
 
-WE ARE WORKING ON A SCRIPT TO DOWNLOAD 10-20 MUGENS AND AUTO MAKE SCRIPTS THAT INSTALL WINE, MESA, BOX86, MUGENS, AND LAUNCH FILES .
-
-*What if I have to install a game ?
-Install game in wine desktop launched with "Wine Desktop.sh" under wine in retropie. 
-Then move games folder to /roms/wine/games or desired location . 
-Normally things are installed to c drive of wine under /home/pi/.wine/cdrive/program files/game example . 
-You have to "show hidden files " to see .wine folder .
-
 *Which Mugens work? 
 
 Mugen 1.0 works best some 1.1 work.
@@ -201,8 +198,8 @@ https://retropie.org.uk/forum/topic/29241/the-which-games-works-with-box86-wine-
 
 *What to expect from M.I.M.P
 - M.I.M.P stands for "mimp is mugen pi". So pi mugen stuff.
-- We will be making a prebuilt Mugen, M.I.M.P, with chars and screenpacks.
-- M.I.M.P prebuilt will be optimized to run on pi 4
+- We will be making a prebuilt Mugen, M.I.M.P screenpack and chars. optimized for pi 4.
+- WE ARE WORKING ON A SCRIPT TO DOWNLOAD 10-20 MUGENS AND AUTO MAKE SCRIPTS THAT INSTALL WINE, MESA, BOX86, MUGENS, AND LAUNCH FILES.
 
 *Resources
 - Box86 Github - https://github.com/ptitSeb/box86
