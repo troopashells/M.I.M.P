@@ -138,42 +138,7 @@ Height = 720
 
 14. Map controls to match qjoypad.
 
-15. Thats it. repeat for your Mugens .
-
-A few optional steps/things and FAQ below .
-
-
-Add mugen as its own system in retropie
-
-1. open pixel desktop .
-2. edit es_systems.cfg 
-
-sudo nano /home/pi/.emulationstation/es_systems.cfg
-Add the following codeblock anywhere after <systemList>
-
- <system>
-  
- /<fullname>M.U.G.E.N</fullname>
-  
- /<name>mugen</name>
-  
- /<path>~/RetroPie/roms/mugen</path>
-   
- /<extension>.sh .SH .conf .CONF </extension>
-   
- /<command>bash %ROM%</command> copy this line from wine in es_systems.cfg
-
- /<platform>mugen</platform>
-  
- /<theme>mugen</theme>
-  
- /</system>
-
-Also if do this remeber
-
-If you u move games to mugen/games change your directories in launch scripts .
-example roms/wine/games to roms/mugen/games 
-
+15. Thats it. Repeat for your Mugens and enjoy . 
 
 Frequently Asked Questions.
 
