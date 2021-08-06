@@ -151,14 +151,22 @@ Add mugen as its own system in retropie
 sudo nano /home/pi/.emulationstation/es_systems.cfg
 Add the following codeblock anywhere after <systemList>
 
-<system>
-<fullname>M.U.G.E.N</fullname>
-<name>mugen</name>
-<path>~/RetroPie/roms/mugen</path>
-<extension>.sh .SH .conf .CONF </extension>
-<command>bash %ROM%</command> copy this line from wine in es_systems.cfg
-<platform>mugen</platform>
-<theme>mugen</theme>
+ <system>
+  
+ <fullname>M.U.G.E.N</fullname>
+  
+ <name>mugen</name>
+  
+ <path>~/RetroPie/roms/mugen</path>
+   
+ <extension>.sh .SH .conf .CONF </extension>
+   
+ <command>bash %ROM%</command> copy this line from wine in es_systems.cfg
+
+ <platform>mugen</platform>
+  
+ <theme>mugen</theme>
+  
 </system>
 
 Also if do this remeber
