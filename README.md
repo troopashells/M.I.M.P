@@ -153,21 +153,21 @@ Add the following codeblock anywhere after <systemList>
 
  <system>
   
- <fullname>M.U.G.E.N</fullname>
+ /<fullname>M.U.G.E.N</fullname>
   
- <name>mugen</name>
+ /<name>mugen</name>
   
- <path>~/RetroPie/roms/mugen</path>
+ /<path>~/RetroPie/roms/mugen</path>
    
- <extension>.sh .SH .conf .CONF </extension>
+ /<extension>.sh .SH .conf .CONF </extension>
    
- <command>bash %ROM%</command> copy this line from wine in es_systems.cfg
+ /<command>bash %ROM%</command> copy this line from wine in es_systems.cfg
 
- <platform>mugen</platform>
+ /<platform>mugen</platform>
   
- <theme>mugen</theme>
+ /<theme>mugen</theme>
   
-</system>
+ /</system>
 
 Also if do this remeber
 
