@@ -63,7 +63,8 @@ experimental/wine
 6.Move game fies to /home/RetroPie/roms/wine/games
 This can be done many ways .SSH, midnight commander to name a few.
 
-7.Two options for making game script. I prefer .sh for overall mugen controller config.
+7.Make Game Launch Script.
+Two options for making game script. I prefer .sh for overall mugen controller config.
 
 Option 1.
 
@@ -101,7 +102,7 @@ WINEDEBUG=-all LD_LIBRARY_PATH="/opt/retropie/supplementary/mesa/lib/" setarch l
 
 9.Open pixel desktop from retropie menu. Then install Qjoypad with
 
-sudo apt-install qjoypad 
+sudo apt-get install qjoypad 
 
 10.Create a controller layout for mugen. 
 Open qjoypad and make a layout called mugen. then map your controllers to buttons you wanna use in mugen. when you open mugen match these buttons.
