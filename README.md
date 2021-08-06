@@ -183,7 +183,7 @@ https://retropie.org.uk/forum/topic/29241/the-which-games-works-with-box86-wine-
 
 
 
-*Props/Credit. Links above in resources. 
+*Props/Credit
 - Box86.       
 - Retropie.   
 - Mugen.    
