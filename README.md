@@ -2,7 +2,7 @@ M.I.M.P.
 
 This is a project to get Mugen running on Pi 4.
 
-July 23, 2021 UPDATE.
+August 5, 2021 UPDATE.
 
 Mugen launching great from Retropie. 
 
@@ -65,25 +65,13 @@ experimental/wine
 6.Move game fies to /home/RetroPie/roms/wine/games
 This can be done many ways .SSH, midnight commander to name a few.
 
-7.Make Game Launch Script.
-Two options for making game script. I prefer .sh for overall mugen controller config.
+7. Make Gnae Launch script
 
-Option 1.
+Use the shell script method. in terminal type 
 
-Create a file /home/pi/RetroPie/roms/wine/yourgame.conf 
-containing the following:
+sudo nano /home/pi/RetroPie/roms/wine/mugennamehere.sh 
 
-DIRECTORY=/home/pi/RetroPie/roms/wine/games/yourgame/
-
-PROGRAM=/home/pi/RetroPie/roms/wine/games/yourgame/gamelaunch.EXE
-
-OPTIONS=
-
-Option 2.
-
-Use the shell script method. Create a file called:
-
-/home/pi/RetroPie/roms/wine/yourgame.sh 
+replace mugennamehere with your mugens name .
 
 containing the following:
 
@@ -91,14 +79,19 @@ containing the following:
 
 xset -dpms s off s noblank
 
-cd "/home/pi/RetroPie/roms/wine/games/yourgamefolder/"
+cd "/home/pi/RetroPie/roms/wine/games/yourmugenfolder/"
 
 matchbox-window-manager &
 
 qjoypad "mugen" &
 
-WINEDEBUG=-all LD_LIBRARY_PATH="/opt/retropie/supplementary/mesa/lib/" setarch linux32 -L /opt/retropie/emulators/wine/bin/wine '/home/pi/RetroPie/roms/wine/games/yourgamefolder/gamelaunch.EXE'
+WINEDEBUG=-all LD_LIBRARY_PATH="/opt/retropie/supplementary/mesa/lib/" setarch linux32 -L /opt/retropie/emulators/wine/bin/wine '/home/pi/RetroPie/roms/wine/games/yourmugenfolder/mugennamehere.EXE'
 
+Easiest way to do this is for your mugen is right click your exe and copy paths . 
+
+Then replace "home/pi.......yourmugenfolder/" on cd line above.  with your paths to folder containing exe.
+
+Then replace 'home/pi......mugennamehere.exe' on wine line with your paths to exe .
 
 8.Replace wine desktop file with attached "Wine Desktop.sh" in this github . 
 
