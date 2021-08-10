@@ -2,7 +2,7 @@ M.I.M.P.
 
 This is a project to get Mugen running on Pi 4.
 
-August 5, 2021 UPDATE.
+August 10, 2021 UPDATE.
 
 Mugen launching great from Retropie. 
 
