@@ -46,7 +46,7 @@ Install pixel if now if you don't have it .
 
 in terminal type
 
-git clone --branch emulator https://github.com/GeorgeMcMullen/rp-box86wine /home/pi/RetroPie-Setup/ext/rp-box86wine/ 
+git clone --branch emulator https://github.com/GeorgeMcMullen/rp-box86wine /home/pi/RetroPie-Setup/ext/rp-box86wineemu/ 
 
 5.Update RetroPie-Setup and install scripts 
 
