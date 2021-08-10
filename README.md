@@ -65,7 +65,7 @@ experimental/wine
 6.Move game fies to /home/RetroPie/roms/wine/games
 This can be done many ways .SSH, midnight commander to name a few.
 
-7. Make Gnae Launch script
+7. Make Game Launch script
 
 Use the shell script method. in terminal type 
 
